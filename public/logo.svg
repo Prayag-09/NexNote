@@ -1,0 +1,39 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        :root {
+            --text-color: #283841;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --text-color: #ffffff;
+            }
+        }
+
+        .text {
+            font-family: 'Arial', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            fill: none;
+            stroke: var(--text-color);
+            stroke-width: 3;
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            animation: draw 2s ease-in-out forwards, fillColor 1s ease-in-out 2s forwards;
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes fillColor {
+            to {
+                fill: var(--text-color);
+            }
+        }
+    </style>
+
+    <text x="10" y="60" class="text">nexnote</text>
+</svg>
