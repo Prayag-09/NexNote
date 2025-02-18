@@ -1,1 +1,1 @@
-# Notion - 2nd Brain for everyone
+# nexnote - A 2nd Brain for everyone
